@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>幸運轉盤</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>幸運轉盤</h1>
+    <p>輸入選項，按下按鈕開始抽選</p>
+
+    <div class="wheel-wrap">
+      <div class="pointer"></div>
+      <canvas id="wheel" width="720" height="720"></canvas>
+      <div class="center-dot">START</div>
+    </div>
+
+    <button id="spinBtn">開始旋轉</button>
+    <div id="result" class="result"></div>
+
+    <div class="editor">
+      <label for="itemsInput">轉盤選項</label>
+      <textarea id="itemsInput">火鍋
+壽司
+義大利麵
+炸雞
+拉麵
+便當
+牛排
+鹽酥雞</textarea>
+      <div class="hint">每一行代表一個選項，修改後會自動更新轉盤。</div>
+    </div>
+  </main>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
